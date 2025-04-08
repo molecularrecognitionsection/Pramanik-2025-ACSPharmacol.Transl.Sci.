@@ -1,0 +1,31 @@
+#### SYSTEM SETTINGS
+
+structure=sumd.pdb
+parameters=parameters
+ForceField=CHARMM
+#non_prot_AA=SAR             
+
+#### SUPERVISION SETTINGS
+
+#RECEPTOR
+main_chain=protein                                 
+resid=90 237 241 265
+#protein residue numbering is shifted by -12 because N-terminal is missing
+
+#LIGAND
+ligand=resname LIG    
+ligand_chain=resname LIG
+ligand_cm=resname LIG
+
+randomize=no
+constrain=no
+slope=0.00             
+
+#### SIMULATION SETTINGS
+n_device=0              
+n_steps=300000
+timestep=4
+MaxFailed=33
+opt_dist=2
+bound_dist=5
+meta_dist=9
